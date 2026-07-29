@@ -1,7 +1,8 @@
 name: 세계관 설계 결정
-about: 시스템·기관·지역 구조의 4안을 비교합니다.
+description: 시스템·기관·지역 구조의 4안을 비교합니다.
 title: "[Design] "
 labels: []
+assignees: []
 body:
   - type: textarea
     id: problem
