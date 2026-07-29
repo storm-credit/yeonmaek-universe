@@ -1,7 +1,8 @@
 name: 문화·지역 조사
-about: 지역 또는 전승을 근거 기반으로 조사합니다.
+description: 지역 또는 전승을 근거 기반으로 조사합니다.
 title: "[Research] "
 labels: []
+assignees: []
 body:
   - type: textarea
     id: question
