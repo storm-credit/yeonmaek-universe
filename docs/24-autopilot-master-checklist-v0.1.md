@@ -32,20 +32,31 @@ A00은 매 작업 시작 시 이 체크리스트와 `docs/13-execution-order-v0.
 - [x] 5권 핵심 완결형 `reframing-required`
 - [x] 기존 다섯 기능을 재사용 모듈로 분리
 - [x] 마이그레이션 지도 작성
-- [ ] 활성 문서의 모호한 `권` 표기 목록화
-- [ ] 새 사가 후보 뒤 일괄 마이그레이션 계획
+- [x] 활성 문서의 모호한 `권` 표기 목록화
+- [x] 새 사가 후보 뒤 일괄 마이그레이션 계획
+
+관련:
+
+- `docs/23-long-growth-saga-migration-map-v0.1.md`
+- `docs/25-book-term-migration-inventory-v0.1.md`
 
 ## Gate C — 메인 사가 길이 4안
 
-- [ ] 5부제 압축 성장형
-- [ ] 7부제 중앙 전환형
-- [ ] 9부제 3×3 대형막형
-- [ ] 가변 부제작·출간 중지 안전형
-- [ ] 연령·시간·관계·복선·홈베이스 테스트
-- [ ] 레드팀
-- [ ] 1순위 `candidate`
+- [x] 5부제 압축 성장형
+- [x] 7부제 중앙 전환형
+- [x] 9부제 3×3 대형막형
+- [x] 가변 부제작·출간 중지 안전형
+- [x] 연령·시간·관계·복선·홈베이스 테스트
+- [x] 레드팀
+- [x] 1순위 `candidate`: 7부제 2/3/2 중앙 전환형
 
-관련: #37
+관련:
+
+- #37
+- `story/00-series/long-growth-main-saga-options-v0.1.md`
+- `tests/long-growth-main-saga-scenarios-v0.1.md`
+- `reviews/long-growth-main-saga-red-team-v0.1.md`
+- `docs/decisions/long-growth-main-saga-candidate-v0.1.md`
 
 ## Gate D — 독자 약속·시리즈명
 
@@ -151,4 +162,4 @@ A00은 매 작업 시작 시 이 체크리스트와 `docs/13-execution-order-v0.
 
 ## 다음 자동 작업
 
-`Gate C — 메인 사가 길이 4안`을 실행한다.
+`Gate D — 독자 약속·톤 상승·메인 시리즈명 4안`을 실행한다.
