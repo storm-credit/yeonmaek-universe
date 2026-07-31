@@ -1,4 +1,11 @@
-# Open Questions
+---
+status: superseded
+superseded_by: memory/open-questions-v0.2.md
+preservation: historical-question-snapshot
+---
+# Open Questions — 구판 보존본
+
+> 이 문서는 초기 질문 스냅샷이다. 현재 작업에는 `memory/open-questions-v0.2.md`를 사용한다. 아래 질문은 삭제하지 않고 당시의 미해결 상태와 설계 편차를 추적하기 위해 보존한다.
 
 ## 작가 승인 필요
 
