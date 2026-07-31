@@ -1,254 +1,260 @@
 ---
-status: assembling
+status: c0-candidate-complete
 issue: 62
 scope: internal-c0-world-bible
 canon_level: candidate-baseline
-manuscript_lock: installment-01-v0.2-frozen
+manuscript_lock: installment-01-v0.2-frozen-patch-queue-ready
+reader_samples: complete-text-prototypes
 ---
-# C0 내부 세계 설정집 통합 색인 v0.1
+# C0 내부 세계 설정집 통합 색인 v0.2
 
 ## 목적
 
-이 문서는 작가·설계 에이전트가 세계 규칙, 기관, 인물, 지역, 수집 항목, 작품 구조와 원고 영향을 한곳에서 추적하는 내부 설정집의 단일 진입점이다.
+작가·설계 에이전트가 세계 규칙, 역사, 기관, 학교, 생활, 생태, 유물, 영웅, 회랑, 7부제, 원고 영향과 인간 검토 상태를 한곳에서 추적하는 내부 설정집의 단일 진입점이다.
 
-`C0`는 독자용 백과사전이 아니다. 후보·폐기·비공개·지역 판본·인간 검토 상태까지 포함하며 판매하지 않는다.
+`C0`는 판매용 설정집이 아니다. candidate·provisional·deprecated·protected-private·human-review를 모두 포함한다.
 
 ## 현재 판정
 
-- 최소 세계관 기준선: `candidate-baseline-ready`
-- 첫 부제작 설정·원고: `v0.2-review-ready / frozen`
-- 7부제 전체 상세 설정: `incomplete`
-- 독자용 도감·지도첩: `schema-ready / sample-content-needed`
-- 부제작 2 원고: `blocked-by-issue-62`
+| 영역 | 상태 |
+|---|---|
+| 핵심 세계 규칙 | candidate-complete |
+| 학교·가족·도시 생활 | candidate-complete |
+| 역사·협정·기관·지식 경계 | candidate-complete |
+| 생물·유물·영웅·회랑 최소 카탈로그 | candidate-complete |
+| 부제작 2~7 상세 설정 | detailed-setting-candidate |
+| 첫 부제작 원고 역검증 | compatible-with-12-line-patch-queue |
+| 독자용 도감·지도 텍스트 샘플 | complete-prototype |
+| 인간·전문가 검토 | matrix-complete / reviews-pending |
+| canon 승격 | author-and-expert-gates-pending |
+| 부제작 2 원고 | blocked-until-author-gate-after-issue-62 |
 
-## 상태 체계
+# 1. 가장 먼저 읽을 문서
 
-| 상태 | 의미 | 원고 사용 |
+1. 핵심편: `world/00-core/c0-world-bible-core-compendium-v0.1.md`
+2. 상태 인벤토리: `docs/decisions/world-bible-status-inventory-v0.1.md`
+3. 열린 질문: `memory/open-questions-v0.2.md`
+4. 완료 게이트: `docs/00-project/world-bible-completion-gate-v0.1.md`
+5. 인간 검토: `reviews/world-bible/human-expert-review-matrix-v0.1.md`
+
+# 2. 상태 체계
+
+| 상태 | 의미 | 사용 |
 |---|---|---|
-| canon | 작가 승인과 필요한 검토를 통과한 정본 | 사용 가능 |
-| candidate | 현재 1순위 작업 기준선 | 초고·테스트에 사용 가능, 변경 추적 필수 |
-| provisional | 조사·사례·감수가 부족한 임시안 | 구조 참고만 가능 |
-| open | 결정을 막는 질문 | 임의 확정 금지 |
-| deprecated | 더 이상 사용하지 않지만 이력 보존 | 신규 사용 금지 |
-| superseded | 최신 후보가 대체함 | 영향 문서만 추적 |
-| protected-private | 위치·당사자·권리 때문에 의도적으로 비공개 | 독자용 공개 금지 |
+| canon | 작가 승인과 필요한 검토 통과 | 정본·출판 후보 |
+| candidate | 현재 1순위 작업 기준선 | 설계·초고·테스트 가능 |
+| provisional | 지역·사례·감수 부족 | 구조 참고, 구체 묘사 제한 |
+| open | 다음 결정을 실제로 막음 | 임의 확정 금지 |
+| deprecated | 사용 중지, 이력 보존 | 신규 사용 금지 |
+| superseded | 최신 문서가 대체 | 영향 추적만 |
+| protected-private | 권리·안전 때문에 의도적 비공개 | 일반 공개 금지 |
 | human-review | 법률·문화·안전·상표·출판 검토 필요 | 검토 전 canon 금지 |
 
-# A. 세계 법칙
+# 3. 세계 법칙
 
-## A1. 최소 통합 기준선
+## 기준 문서
 
-- 기준 문서: `world/00-core/minimum-worldbuilding-baseline-v0.1.md`
-- 상태: candidate
-- 핵심: 하나의 세계·다층 생태 위상, 장소/상태/관계 조건, 물질·결과 보존, 결합 조율, 부담 보존
-- 상세화: #64 세계 규칙·실패·복구 사례 원장
+- `world/00-core/minimum-worldbuilding-baseline-v0.1.md`
+- `world/00-core/world-rules-failure-recovery-ledger-v0.1.md`
+- `docs/decisions/installment1-world-bible-clarifications-v0.1.md`
+- 테스트: `tests/world-bible/world-rules-case-scenarios-v0.1.md`
 
-## A2. 존재론·경계
+## 핵심
 
-- 게이트: #23
-- 선택: 다층 생태 위상형
-- 필수 상세: 위상 깊이, 감각·센서 차이, 입구·귀환 실패, 부상·사망·물질 보존 사례
+- 하나의 현실·복수 생태 위상
+- 장소·상태·관계 조건 중 둘 이상 필요
+- 물질·시간·부상·결과 보존
+- 기록·감각·센서 불일치 가능, 물리적 시간여행 아님
+- 공통 마나 생성이 아닌 결합 조율
+- 신체·장소·생태·도구·관계·시간·법적 책임의 부담 보존
+- 출력보다 관측·중지·인계·복구·정정 중심 성장
+- 위험과 권리 분리, 거부·철회·비공개 가능
+- 학생·학교·현실기관·당사자·감사의 권한 분산
 
-## A3. 힘·수련·비용
+# 4. 학교·가족·생활
 
-- 게이트: #24
-- 선택: 결합 조율·부담 보존형
-- 필수 상세: 준비, 중지, 해제, 회복, 재활, 도구 수리, 학생/성인 권한 차이
+## 기준 문서
 
-## A4. 생태·지성·권리
+- `world/40-institutions/korea-school-life-operations-bible-v0.1.md`
+- `docs/decisions/surface-school-legal-form-candidate-v0.1.md`
+- `world/40-institutions/school-badges-skills-equipment-catalog-v0.1.md`
+- 테스트: `tests/world-bible/school-life-operation-scenarios-v0.1.md`
 
-- 게이트: #25
-- 선택: 다축 지위·권리 묶음형
-- 필수 상세: 의사소통 불확실성, 이동·서식·검역, 비소유, 위험과 권리 분리, 연구·사체·기억 기록 통제
+## 핵심
 
-# B. 제도·역사·지식 경계
+- 인가 중·고등학교+별도 현장교육센터 candidate
+- 일반 교과·학적·상담·진급·졸업 유지
+- 통학 기본+선택 기숙+계절 학단
+- 관측·자기 안정·안전·생태 권리·부담 복구·제도 책임 교육
+- 학생은 관찰·기록·신고·중지·제한 보조 가능
+- 시설·교통·구조·의료·수사 최종권한은 성인 현실 전문기관
+- 보호자·학생 단계별 동의·철회
+- 건강·장애·경제·가정 조건에 대체 역할과 지원
+- 사건 없는 급식·수업·동아리·친구·가족·일반 진로 유지
 
-## B1. 현실 기관·숨은 공동체
+# 5. 역사·기관·국제 질서
 
-- 게이트: #26
-- 선택: 분산 이중관할·공동대응형
-- 원칙: 현실 기관은 표면 결과, 전문 조직은 위상·회랑·생태 복구, 당사자와 지역 공동체는 권리·협정 결정에 참여
-- 상세화: #66
+## 기준 문서
 
-## B2. 학교·현장교육센터
+- `world/30-history/history-agreements-institutions-knowledge-boundary-v0.1.md`
+- 테스트: `tests/world-bible/history-institutions-knowledge-scenarios-v0.1.md`
 
-- 기준 문서: `docs/decisions/surface-school-legal-form-candidate-v0.1.md`
-- 상태: candidate + human-review
-- 선택: 인가 중·고등학교와 별도 현장교육센터
-- 상세화: #65
+## 핵심
 
-## B3. 다중 협정망·국제 조정체
+- 단일 고대 비밀제국·세계정부 없음
+- 지역 관계 관행→시설 충돌→분절 대응→전문화→디지털 불일치→후발 국제 조정
+- 현실 전쟁·식민지배·재난·신앙을 심층 세계의 원인으로 대체하지 않음
+- 국제망은 경보·검역 최소 기준·구조·기록 호환·통역·중재만 담당
+- 공개 수준과 기관 권한 변화는 다음 작품에서 초기화되지 않음
+- K0~K5 지식 경계는 접근 범위이지 신분 서열이 아님
 
-- 게이트: #28
-- 원칙: 단일 고대 제국·세계정부 금지, 위험 경보·검역 최소 기준·구조 지원·기록 호환·중재만 담당
-- 상세화: #66
+# 6. 실제 수집 카탈로그
 
-## B4. 지식 수준
+## 통합 색인
 
-다음 주체별로 `모름 / 표면 결과만 앎 / 제한 부속기록 접근 / 전문 접근 / 당사자 결정권`을 구분해야 한다.
+`world/60-companion/world-bible-collection-catalog-index-v0.1.md`
 
-- 일반인·현실 친구
-- 보호자
-- 학교 교직원
-- 현장교육센터
-- 119·경찰·병원·보험·법원
-- 지방·중앙 정부
-- 언론·플랫폼
-- 지역 공동체·지성 당사자
-- 국제 조정체
+## 생물·동행 관계 12
 
-# C. 한국 홈베이스·생활
+`world/20-ecology/creature-relationship-catalog-v0.1.md`
 
-## C1. 한국 첫 생활권
+여울띠, 모서리잠, 온기고리, 길눈, 물갈피, 뒤집잎, 빗마디, 문답결, 소리주머니, 마른물결, 숨돌, 빛바느질.
 
-- 기준: 합성 서안 생활권
-- 실제 자치구·역·학교·취약 시설 1:1 복제 금지
-- 집·통학·학교·현장교육센터·주민 생활·병원·교통·공사를 반복 고정점으로 사용
-- 상세화: #65, #70
+## 유물·도구·보물 8
 
-## C2. 생활 운영
+`world/50-artifacts/artifact-tool-treasure-catalog-v0.1.md`
 
-필수 상태 원장:
+되짚등, 겹눈틀, 비움매듭, 반납열쇠, 멈춤종, 숨은추, 잔기록판, 돌림패.
 
-- 평일 통학
-- 주중 기숙 선택
-- 주말·방학·계절 학단
-- 수업·평가·보충·상담
-- 식사·돈·통신·교복·장비
-- 의료·보험·사고조사·학업 복귀
-- 가족 연락·동의·철회
-- 일반 친구·주민·현실 기록
+## 영웅·탐사자·실패자 8
 
-# D. 장기 사가
+`world/30-history/hero-explorer-failure-record-catalog-v0.1.md`
 
-## D1. 메인 사가 구조
+윤서후, 한재목, 장리원, 민서림, 임해솔, 백도원, 세 차례 철회한 대표, 판본 사이의 통역자.
 
-- 기준 문서: `docs/decisions/seven-installment-saga-map-candidate-v0.1.md`
-- 상태: candidate
-- 기간: 만 12세 전후→만 18세 전후 약 6년
-- 대형막: 2/3/2
-- 홈베이스: 한국 학교·가족·현실 친구·도시 생활 유지
+## 회랑·숨은 장소 10
 
-## D2. 부제작별 상태
+`world/10-routes/corridor-hidden-place-catalog-v0.1.md`
 
-| 부제작 | 기능 | 상세 상태 | 다음 작업 |
+서안 통학 회랑, 삼면계단, 유리온실 배수정원, 갈림물목, 서해 바람턱, 수문겹길, 환승그늘선, 마른물길 제8구간, 숨돌층 완충로, P-17 보호폐쇄구역.
+
+## 보조 항목
+
+- 행동 배지 8
+- 공통 기술 10
+- 장비 8
+
+테스트: `tests/world-bible/collection-catalog-scenarios-v0.1.md`
+
+# 7. 메인 사가·부제작
+
+## 상위 기준
+
+- `docs/decisions/seven-installment-saga-map-candidate-v0.1.md`
+- `story/30-books/installments-02-07-setting-bible-index-v0.1.md`
+- 4안 비교: `story/30-books/installments-02-07-setting-incident-options-v0.1.md`
+
+| 부제작 | 중심 사건 | 상세 문서 | 상태 |
 |---:|---|---|---|
-| 1 | 발견과 부담 | v0.2 초고·설정 상세 | #71 역검증 |
-| 2 | 보호와 소유 | 기능·수집축 후보 | #68 구체 사건 배정 |
-| 3 | 서로 다른 한국 | 국내 지역 후보 | 현지 조사+구체 사건 |
-| 4 | 번역과 국경 | 방콕–차오프라야 후보 | 태국어·현지 감수+구체 사건 |
-| 5 | 기록과 공개 | 기능 수준 | 한국 귀환 현장 사건 필요 |
-| 6 | 선택권과 독점 | 기능 수준 | 중앙 통제가 실제 성공하는 사건 필요 |
-| 7 | 결정과 공동관리 | 기능 수준 | 분산 최종 현장·감정 회수 필요 |
+| 1 | 잘못 분류된 통학 회랑 | 첫 부제작 패키지·v0.2 원고 | review-ready/frozen |
+| 2 | 학교 경기·시설·철회 가능한 동행 | `installment2-protection-ownership-setting-bible-v0.1.md` | candidate |
+| 3 | 하구 계절판·고정 복구·공동보관 | `installment3-different-koreas-setting-bible-v0.1.md` | provisional-region |
+| 4 | 국제 검역·수문 운영·번역 권력 | `installment4-translation-border-setting-bible-v0.1.md` | provisional-region |
+| 5 | 한국 환승생활권·영상·삭제 기록 | `installment5-records-disclosure-setting-bible-v0.1.md` | candidate |
+| 6 | 중앙 조율망의 실제 성공 | `installment6-choice-monopoly-setting-bible-v0.1.md` | candidate |
+| 7 | 복수 지역 행동·권한 만료·졸업 | `installment7-decision-co-governance-setting-bible-v0.1.md` | candidate |
 
-# E. 인물·관계
+통합 테스트: `tests/world-bible/installments-02-07-setting-scenarios-v0.1.md`
 
-## E1. 주인공
+# 8. 첫 부제작 원고
 
-- 작업명: 서이안
-- 상태: working candidate
-- 확정 전 필요: 성별·외형·가족 구성·주거·경제·장기 진로에 대한 작가 판단
-- 장기 축: 혼자 완전한 답을 찾으려 함→불완전한 기록 공유→표준의 한계 인식→독점 통제의 유혹→우선권 포기
+## 최신본
 
-## E2. 핵심 관계
+`manuscript/installment-01/README.md`
 
-- 가족 앵커
-- 현실 친구·독립 기록자
-- 절차 동료
-- 생태·관계 동료
-- 안전 책임자
-- 지역·해외 당사자
-- 멘토·기관 내 이견자
+## 역검증
 
-각 관계는 정보 접근, 동의·철회, 책임, 거리, 신뢰 상태를 부제작별로 기록한다.
+- 감사: `reviews/world-bible/installment1-manuscript-world-bible-reverse-audit-v0.1.md`
+- 테스트: `tests/world-bible/installment1-manuscript-reverse-audit-scenarios-v0.1.md`
+- 명료화 결정: `docs/decisions/installment1-world-bible-clarifications-v0.1.md`
 
-# F. 수집 생태계
+## 판정
 
-## F1. 원칙
+- 사건·인물·결말 재설계 없음
+- 12문장 국소 패치 큐
+- 시간여행 오해·시설/센터 주체·`이동군` 공식용어만 조정
+- #62 종료 전 실제 원고 파일은 동결
 
-- 기준 문서: `docs/decisions/collection-ecosystem-candidate-v0.1.md`
-- 구조: 중심 1축+보조 1축+이전 항목 재맥락화
-- 보상: 소유가 아니라 발견·정정·관계·반환·수리·보호 폐쇄·재평가
+# 9. 독자용 설정집 샘플
 
-## F2. 실제 항목 준비도
+## 정정되는 생태 도감 6항목
 
-| 축 | 현재 실제 항목 | 상태 | 목표 |
-|---|---:|---|---:|
-| 생물·동행 관계 | 여울띠 1종 중심 | 부족 | 최소 12개 |
-| 도감·정정 | 첫 부제작 1항목 | 부족 | 7부제 배정 |
-| 회랑·숨은 장소 | 첫 통학 구역 중심 | 부족 | 최소 10개 |
-| 유물·도구·보물 | 원칙만 있음 | 미작성 | 최소 8개 |
-| 영웅·탐사자·실패자 | 원칙만 있음 | 미작성 | 최소 8명 |
-| 배지·기술·장비 | 후보 규칙 | 부족 | 학교 생활과 연결 |
+`publishing/samples/correcting-bestiary-six-card-sample-v0.1.md`
 
-상세화: #67
+- 여울띠
+- 모서리잠
+- 온기고리
+- 물갈피
+- 문답결
+- 숨돌
 
-# G. 지역·문화
+## 회랑 지도첩 4구역
 
-## G1. 한국
+`publishing/samples/corridor-atlas-four-zone-sample-v0.1.md`
 
-- 서울권 합성 생활권
-- 국내 부제작 후보: 금강하구
-- 실제 생활·생업·환경·언어 자료와 현지 검토 필요
+- 서안 통학 회랑
+- 삼면계단
+- 갈림물목
+- 수문겹길
 
-## G2. 해외
+## 테스트
 
-- 첫 해외 후보: 방콕–차오프라야
-- 태국어 용어·주민·유지보수 노동·수계·종교 장소 분리 검토 필요
-- 다른 국가·지역은 출간 약속이 아니라 연구 슬롯
+`tests/world-bible/companion-reader-sample-scenarios-v0.1.md`
 
-## G3. 금지
+독자용 샘플은 본편 필수 해답을 독점하지 않으며 실제 출판·삽화 승인이 아니다.
 
-- 국가 하나를 문화 하나로 처리
-- 실제 재난·전쟁·신앙을 숨은 세계의 진짜 원인으로 대체
-- 한국 주인공이 현지 최종 결정권을 대신함
-- 실제 취약 시설·민감 서식 위치를 독자용 지도에 공개
+# 10. 지역·문화·법률·출판 검토
 
-# H. 첫 부제작 원고 잠금
+## 기준
 
-- 최신 색인: `manuscript/installment-01/README.md`
-- 상태: `v0.2 integrated draft / frozen for world-bible audit`
-- 허용: 오탈자·명백한 연속성 오류 기록
-- 금지: #62 완료 전 구조 변경, 새 설정 추가, 부제작 2 원고 시작
-- 역검증: #71
+- `reviews/world-bible/human-expert-review-matrix-v0.1.md`
+- 테스트: `tests/world-bible/human-review-matrix-scenarios-v0.1.md`
 
-# I. 동반 설정집
+## 검토 대기
 
-## I1. 내부 C0
+- 작가: 7부제·주인공 정체성·대표 수집 얼굴·최종 감정·제목
+- 독자: 10~15세·성인·보호자 가독성·학교 매력·수집 인상
+- 한국: 교육행정·학교안전·의료·보험·개인정보·도시시설
+- 지역: 금강하구 복수 당사자 감수
+- 해외: 태국어·방콕 수계·주민·기관·문화 감수
+- 전문: 생태권리·연구윤리·언론·디지털 기록
+- 출판: 제목·상표·분권·판형·삽화·접근성
 
-- 이 문서를 단일 진입점으로 사용
-- 후보·폐기·비공개·인간 검토까지 포함
-- 독자에게 직접 공개하지 않음
+# 11. 금지·보호
 
-## I2. 독자용
+- 생물 포획·거래·희귀도·전투력 순위
+- 유물 만능무기·상위호환
+- 학교·한국·주인공의 세계 최종권한
+- 실제 신앙·재난·피해·보호종의 수집품화
+- 기억 삭제·허위 현실 기록 기본 은폐
+- 학생의 구조·시설·의료·수사 지휘
+- 해외 지역에서 한국팀의 최종 결정
+- 민감 위치·자기명칭·미성년·의료·수사 기록 공개
+- 후속작에서 이안의 독점 최종열쇠 복구
 
-- 정정되는 생태 도감
-- 회랑 지도첩
-- 본편 이해에 필수 정보 분리 금지
-- 판본 차이와 정정 이력은 보여 주되 전지적 정답집 금지
-- 샘플 제작: #69
+# 12. 다음 게이트
 
-# J. 실행 순서
+- #63 상태 인벤토리 최종 정리
+- #72 전체 완성도 종료 테스트
+- #62 작가 승인 전 candidate 완료 판정
 
-1. #63 상태·질문 전수 정리
-2. #64 세계 규칙 사례 원장
-3. #65 학교·생활 바이블 / #66 역사·기관 연표 병렬
-4. #67 실제 수집 카탈로그
-5. #68 부제작 2~7 배정
-6. #70 인간 검토 매트릭스
-7. #71 첫 원고 역검증
-8. #69 C0 통합·독자용 샘플
-9. #72 종료 테스트
+# 13. #62 종료 기준 상태
 
-# K. 완료 판정
-
-#62는 다음을 모두 만족할 때만 닫는다.
-
-- 선언이 아니라 사례로 작동하는 세계 규칙
-- 6년 학교·가족·생활 시뮬레이션
-- 실제 생물·유물·영웅·회랑 최소 세트
-- 부제작 2~7 고유 사건 직전 설정
-- 지역·법률·문화·상표 검토 상태
-- 첫 원고와 양방향 연속성
-- C0 단일 색인과 독자용 샘플
-- 필수 테스트 실패 0
+- 사례로 작동하는 세계 규칙: 충족
+- 6년 학교·가족·생활 운영: 충족
+- 실제 생물·유물·영웅·회랑 최소 세트: 충족
+- 부제작 2~7 고유 사건 직전 설정: 충족
+- 인간 검토 상태와 후퇴안: 충족
+- 첫 원고 양방향 연속성: 충족, 12문장 패치 대기
+- C0 단일 색인·핵심편·독자 샘플: 충족
+- 최종 통합 테스트: #72 대기
