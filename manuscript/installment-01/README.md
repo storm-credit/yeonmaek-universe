@@ -43,7 +43,7 @@ physical_volume_candidate: two-volumes-7-8-boundary
 ### 1권
 
 - 1~7장
-- 끝: 여울띠 이동 가족군 가설+이안 현장 권한 상실
+- 끝: 여울띠 이동 가족군 가설+하진 현장 권한 상실
 
 ### 2권
 

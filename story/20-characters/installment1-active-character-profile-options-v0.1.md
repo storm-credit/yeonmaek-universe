@@ -42,7 +42,7 @@ scope: working-profiles-not-final-identities
 
 # 안 A — 동네 안정+혼합 통학형
 
-## P1 주인공 — 작업명 `서이안`
+## P1 주인공 — 작업명 `서하진`
 
 - 만 12세, 초등 졸업 직후~중학교 진입 전후.
 - 성별은 최종 확정 전 열어 둔다.
@@ -181,7 +181,7 @@ scope: working-profiles-not-final-identities
 
 ## 활성 인물
 
-- P1 서이안
+- P1 서하진
 - P2 문하람
 - P3 차도겸
 - P4 강유나

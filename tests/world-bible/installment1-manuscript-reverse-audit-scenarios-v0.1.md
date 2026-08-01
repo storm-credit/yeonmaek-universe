@@ -15,7 +15,7 @@ source: reviews/world-bible/installment1-manuscript-world-bible-reverse-audit-v0
 | T06 | 교통 통제·대체 동선 주체 구분 | PASS |
 | T07 | 센터는 학생 안전·관찰·중지·철수 담당 | PASS |
 | T08 | 외부 구조·의료 권한을 학생·센터가 대체하지 않음 | PASS |
-| T09 | 이안의 기록 능력이 안전 위반을 면책하지 않음 | PASS |
+| T09 | 하진의 기록 능력이 안전 위반을 면책하지 않음 | PASS |
 | T10 | 학생 철수 뒤 실시간 지휘권 없음 | PASS |
 | T11 | 지현의 단계별 동의·철회 유지 | PASS |
 | T12 | 유나의 원본·선별·재사용 권리 유지 | PASS |

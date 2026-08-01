@@ -66,7 +66,7 @@ source_index: story/30-books/installments-02-07-setting-bible-index-v0.1.md
 | A03 | 부제작 3 현지 지역 주체가 복구·공개 결정 | PASS |
 | A04 | 부제작 4 현지 수문·통역·당사자가 최종 결정 | PASS |
 | A05 | 부제작 5 교통·시설·감사·주민 공개권 분리 | PASS |
-| A06 | 부제작 6 이안의 우선권이 최종 시설·의료권한 아님 | PASS |
+| A06 | 부제작 6 하진의 우선권이 최종 시설·의료권한 아님 | PASS |
 | A07 | 부제작 7 권한 분해 뒤 지역별 책임 유지 | PASS |
 
 ## 수집 시스템
@@ -136,7 +136,7 @@ source_index: story/30-books/installments-02-07-setting-bible-index-v0.1.md
 
 - 중앙망 실제 성공 삭제: 최종 선택의 유혹이 무너져 FAIL
 - 숨돌 서식 비용 삭제: 중앙 기술 비판이 추상화돼 FAIL
-- 이안 제한 역할 수락 삭제: 7의 책임 질문이 약화돼 FAIL
+- 하진 제한 역할 수락 삭제: 7의 책임 질문이 약화돼 FAIL
 
 ### 부제작 7
 

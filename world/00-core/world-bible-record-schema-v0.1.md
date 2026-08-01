@@ -21,7 +21,7 @@ format: markdown-frontmatter-compatible
 | INS | 기관·학교·센터·재단 | INS-KR-001 학교 candidate |
 | AGR | 협정·공동관리·기록 규칙 | AGR-005 정정·철회 협정 |
 | EVT | 역사·현재 사건 | EVT-I1-001 통학 회랑 사건 |
-| CHR | 등장인물·관계 기능 | CHR-IAN-001 서이안 |
+| CHR | 등장인물·관계 기능 | CHR-HAJIN-001 서하진 |
 | CLU | 공정 단서 | CLU-I1-F01 |
 | QST | 미스터리 질문 | QST-I1-Q01 |
 | BAD | 행동 배지 | BAD-001 첫 신고 |
