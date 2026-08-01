@@ -3,6 +3,7 @@
 
 The cleanup intentionally ignores non-empty files regardless of old audit labels.
 It is idempotent and restricted to repository design-document roots.
+This file is retained as the reproducible cleanup rule after the one-time run.
 """
 from __future__ import annotations
 
