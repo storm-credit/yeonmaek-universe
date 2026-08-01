@@ -1,0 +1,45 @@
+name: Protagonist name migration
+
+on:
+  push:
+    branches:
+      - agent/bootstrap-worldbuilding-blueprint
+    paths:
+      - scripts/migrate_protagonist_name.py
+      - .github/workflows/protagonist-name-migration.yml
+
+permissions:
+  contents: write
+
+jobs:
+  migrate:
+    if: github.actor != 'github-actions[bot]'
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out branch
+        uses: actions/checkout@v4
+        with:
+          ref: agent/bootstrap-worldbuilding-blueprint
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Migrate names and validate
+        run: |
+          python scripts/migrate_protagonist_name.py
+          git diff --check
+
+      - name: Commit migrated files
+        run: |
+          if git diff --quiet; then
+            echo "No migration changes required."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A
+          git commit -m "Migrate protagonist working name to Seo Hajin"
+          git push origin HEAD:agent/bootstrap-worldbuilding-blueprint
