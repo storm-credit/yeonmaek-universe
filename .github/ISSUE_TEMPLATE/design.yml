@@ -1,0 +1,42 @@
+name: 세계관 설계 결정
+description: 시스템·기관·지역 구조의 4안을 비교합니다.
+title: "[Design] "
+labels: []
+assignees: []
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: 해결할 문제
+    validations:
+      required: true
+  - type: textarea
+    id: known
+    attributes:
+      label: 이미 확정된 것
+    validations:
+      required: true
+  - type: textarea
+    id: constraints
+    attributes:
+      label: 제약과 제외 범위
+    validations:
+      required: true
+  - type: textarea
+    id: success
+    attributes:
+      label: 성공 조건
+    validations:
+      required: true
+  - type: checkboxes
+    id: gates
+    attributes:
+      label: 필수 게이트
+      options:
+        - label: 구조적으로 다른 4개 안
+          required: true
+        - label: 맹점과 실패 모드
+          required: true
+        - label: 문화 무결성 검토
+        - label: 변경 영향 검토
+          required: true

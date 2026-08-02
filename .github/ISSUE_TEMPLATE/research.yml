@@ -1,0 +1,40 @@
+name: 문화·지역 조사
+description: 지역 또는 전승을 근거 기반으로 조사합니다.
+title: "[Research] "
+labels: []
+assignees: []
+body:
+  - type: textarea
+    id: question
+    attributes:
+      label: 조사 질문
+      description: 국가 전체가 아니라 구체적인 지역·시대·현상을 적어주세요.
+    validations:
+      required: true
+  - type: textarea
+    id: use
+    attributes:
+      label: 세계관에서의 사용 목적
+    validations:
+      required: true
+  - type: dropdown
+    id: sensitivity
+    attributes:
+      label: 문화 민감도
+      options:
+        - 낮음
+        - 중간
+        - 높음 — 현존 종교/소수집단/신성 의례 포함
+    validations:
+      required: true
+  - type: textarea
+    id: success
+    attributes:
+      label: 성공 조건과 중지 조건
+    validations:
+      required: true
+  - type: textarea
+    id: sources
+    attributes:
+      label: 필요한 출처 기준
+      value: "A/B 등급 출처 2종 이상, 실제 사실과 창작 변형 분리"
