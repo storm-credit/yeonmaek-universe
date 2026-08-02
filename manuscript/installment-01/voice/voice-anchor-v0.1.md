@@ -2,7 +2,7 @@
 status: draft-candidate
 issue: 59
 voice: close-third-past
-pov_anchor: Seo Ian
+pov_anchor: Seo Hajin
 ---
 # 첫 부제작 Voice Anchor v0.1
 
