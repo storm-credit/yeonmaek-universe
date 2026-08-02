@@ -13,9 +13,11 @@ canon: partial-author-baseline
 
 - 소설 프로젝트 PM: `agents/00-orchestrator.md`
 - RACI·검토 서명: `docs/00-project/novel-pm-raci-signoff-v0.1.md`
-- 오케스트라: `docs/14-agent-orchestra-v0.3.md`
+- 설계 오케스트라: `docs/14-agent-orchestra-v0.3.md`
+- 원고 완성 오케스트라: `docs/14-agent-orchestra-v0.4.md`
 - 작가 승인 기준선: `docs/decisions/author-approved-core-baseline-v0.1.md`
 - CLAUDE 운영 계약: `CLAUDE.md`
+- 완성본 집필 하네스: `docs/00-project/manuscript-completion-harness-index-v0.1.md`
 
 ## 2. 세계관·내부 설정집 C0
 
@@ -43,6 +45,7 @@ canon: partial-author-baseline
 - 반복 루프: `docs/decisions/seven-installment-loop-candidate-v0.1.md`
 - 3~7 규모·차별화: `story/00-series/installments-03-07-differentiation-and-scale-matrix-v0.1.md`
 - 전체 회귀 감사: `reviews/series/seven-installment-full-blueprint-regression-v0.1.md`
+- 7부제 맥거핀·복선·결말 회수: `story/40-ledgers/foreshadowing-mystery-payoff-ledger-v0.2.md`
 
 상태: `author-approved structural baseline`.
 
@@ -64,6 +67,7 @@ canon: partial-author-baseline
 
 - 연재 지도: `story/00-series/two-hundred-episode-serialization-map-v0.1.md`
 - 상세 번호표 생성기: `scripts/build_200_episode_map.py`
+- 첫 부제작 28화 브리프: `manuscript/installment-01/episode-briefs/episode-ledger-v0.1.md`
 
 후보 배정:
 
@@ -77,7 +81,30 @@ canon: partial-author-baseline
 
 상태: `candidate-production-map / 실제 원고 분량·플랫폼·출판 검토 대기`.
 
-## 6. 내부적으로 완료된 것
+## 6. 원고 완성 하네스
+
+- 하네스 H0~H12: `docs/00-project/manuscript-completion-harness-v0.1.md`
+- 원고 모드 v0.2: `docs/00-project/manuscript-mode-operating-contract-v0.2.md`
+- 문체·액션·풍경·연재·카피 담당: N19·N20·N21·N22·P14
+- 한국 웹소설 기능 연구: `research/references/korean-webnovel-prose-serialization-patterns-v0.1.md`
+- 회차·장면 브리프: `templates/episode-scene-writing-brief.md`
+- 논리 시나리오: `tests/manuscript/manuscript-completion-harness-scenarios-v0.1.md`
+- v0.3 결정적 빌드: `scripts/build_installment1_v03.py`
+- 문장·문단 정량 감사: `scripts/audit_manuscript_style.py`
+- 첫 부제작 적용 감사: `reviews/manuscript/installment1-completion-harness-audit-v0.2.md`
+
+상태 구분:
+
+1. design-complete
+2. draft-complete
+3. internal-review-ready
+4. human-review-ready
+5. edited-manuscript
+6. publication-ready
+
+첫 부제작은 `human-review-ready`이며 `edited-manuscript` 또는 `publication-ready`가 아니다.
+
+## 7. 내부적으로 완료된 것
 
 - 세계 존재 원리·힘·비용·실패·복구
 - 현대 기술·기관·기록·노출 경계
@@ -92,9 +119,10 @@ canon: partial-author-baseline
 - 117장 장별 개요
 - 장기 미스터리 회계와 P-17 결말
 - 200화 연재 변환
+- 문체·액션·풍경·연재·복선·카피 하네스
 - PM·RACI·레드팀·편차 기록
 
-## 7. 아직 완료되지 않은 것
+## 8. 아직 완료되지 않은 것
 
 - 실제 10~15세·성인·보호자 독자 테스트 결과
 - 한국 교육행정·학교안전·의료·보험·개인정보 법률 검토
@@ -104,17 +132,19 @@ canon: partial-author-baseline
 - 실제 생물·유물·지도 삽화와 접근성 테스트
 - 제목·상표·출판·판형·분권·가격·플랫폼 분량 검토
 - 부제작 2~7 원고
+- 첫 부제작 발달·분야·라인·카피·교정쇄
 - 최종 canon·출판본
 
-## 8. 정확한 완료 판정
+## 9. 정확한 완료 판정
 
 - **세계관·내부 설정집:** 내부 설계용으로 완료.
 - **7부제 전체 설계도:** 원고 직전 수준으로 완료.
 - **200화 구조:** 기존 장면을 늘리지 않는 생산 후보로 완료.
-- **첫 부제작:** 인간 테스트 가능한 리뷰본.
+- **집필 하네스:** 구축 및 첫 부제작 시험 적용 완료.
+- **첫 부제작:** 인간 검토 가능한 리뷰본.
 - **부제작 2~7:** 원고 승인 전 단계까지 완료.
-- **최종 정본·출판 준비:** 인간 검토가 남아 미완료.
+- **편집·출판 완성본:** 인간 검토와 편집이 남아 미완료.
 
-## 9. 다음 차단선
+## 10. 다음 차단선
 
 한 작품의 원고를 시작하려면 해당 작품의 명시적 원고 승인이 필요하다. 인간 검토 대기 항목은 승인 뒤에도 `working/provisional/human-review` 상태로 유지한다.
