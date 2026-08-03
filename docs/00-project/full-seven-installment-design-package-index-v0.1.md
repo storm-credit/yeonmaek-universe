@@ -1,150 +1,123 @@
 ---
-status: complete-internal-design-package
-issue: 105
+status: clean-world-bible-design-index
 accountable: A00
-responsible: [A01, N00, P09]
-consulted: [A13, A14, N03, N09, N16, N17, N18, P03, P07, P10, P12, P13]
 human_gates: [author, reader, education-safety-legal, regional-cultural, ecology-rights, infrastructure-safety, publishing-visual-trademark]
-canon: partial-author-baseline
+canon: false
+branch: canon/world-bible-blueprint-clean
 ---
-# 세계관·설정집·7부제·200화 전체 설계 패키지 색인 v0.1
+# 세계관·설정집·7부제 설계 패키지 색인 v0.2
 
-## 1. PM·운영 계약
+## 1. 이 문서의 범위
 
-- 소설 프로젝트 PM: `agents/00-orchestrator.md`
-- RACI·검토 서명: `docs/00-project/novel-pm-raci-signoff-v0.1.md`
-- 설계 오케스트라: `docs/14-agent-orchestra-v0.3.md`
-- 원고 완성 오케스트라: `docs/14-agent-orchestra-v0.4.md`
-- 작가 승인 기준선: `docs/decisions/author-approved-core-baseline-v0.1.md`
-- CLAUDE 운영 계약: `CLAUDE.md`
-- 완성본 집필 하네스: `docs/00-project/manuscript-completion-harness-index-v0.1.md`
+이 색인은 소설 본문이 아니라 다음 설계 자산만 연결한다.
 
-## 2. 세계관·내부 설정집 C0
+- 세계관 설정집
+- 인물·기관·학교·생태·지역·능력 체계
+- 메인 사가와 부제작 구조 후보
+- 장·장면 카드·화별 기능 설계
+- 복선·연표·권한 구조
+- 조사·검증·레드팀 문서
+
+실제 소설 원고, 원고 승인 기록, 초고 완료 패키지, 원고 기반 독자 테스트는 이 브랜치의 정본 범위가 아니다. 해당 자료는 `archive/full-saga-draft-unapproved`에만 보존한다.
+
+## 2. 운영 기준
+
+- 최상위 운영 계약: `CLAUDE.md`
+- 정리 브랜치 상태: `docs/00-project/world-bible-clean-branch-status-v0.1.md`
+- 교정된 후보 기준선: `docs/decisions/clean-branch-candidate-baseline-v0.1.md`
+- 프로젝트 의도: `docs/12-author-intent-v0.1.md`
+- 원고 직전 준비도 기준: `docs/decisions/pre-manuscript-integration-readiness-v0.1.md`
+
+`진행`, `계속`, `이어서진행`, `자동으로 끝까지`는 설정집·설계도 자동 진행만 뜻한다. 실제 원고 작성 승인이 아니다.
+
+## 3. 세계관·내부 설정집 C0
 
 - C0 색인: `world/00-core/c0-world-bible-index-v0.1.md`
 - C0 핵심편: `world/00-core/c0-world-bible-core-compendium-v0.1.md`
 - 세계 규칙·실패·복구: `world/00-core/world-rules-failure-recovery-ledger-v0.1.md`
 - 현실 접점: `world/20-systems/hidden-world-interface-v0.1.md`
+- 힘 체계: `world/20-systems/power-system-architecture-v0.1.md`
 - 학교 운영: `world/40-institutions/korea-school-life-operations-bible-v0.1.md`
 - 학교 매력: `world/40-institutions/school-wonder-life-options-v0.1.md`
-- 생물 12종: `world/20-ecology/creature-relationship-catalog-v0.1.md`
-- 유물·도구·보물 8개: `world/50-artifacts/artifact-tool-treasure-catalog-v0.1.md`
-- 영웅·탐사자·실패자 8명: `world/30-history/hero-explorer-failure-record-catalog-v0.1.md`
-- 회랑·숨은 장소 10곳: `world/10-routes/corridor-hidden-place-catalog-v0.1.md`
+- 생물 관계 카탈로그: `world/20-ecology/creature-relationship-catalog-v0.1.md`
+- 유물·도구·보물: `world/50-artifacts/artifact-tool-treasure-catalog-v0.1.md`
+- 영웅·탐사자·실패 기록: `world/30-history/hero-explorer-failure-record-catalog-v0.1.md`
+- 회랑·숨은 장소: `world/10-routes/corridor-hidden-place-catalog-v0.1.md`
 - 배지·기술·장비: `world/40-institutions/school-badges-skills-equipment-catalog-v0.1.md`
 - 독자용 설정집 구조: `world/60-companion/companion-record-schema-and-canon-tiers-v0.1.md`
-- 시각 언어: `docs/decisions/visual-collection-language-candidate-v0.1.md`
+- 시각 언어 후보: `docs/decisions/visual-collection-language-candidate-v0.1.md`
 
-상태: `candidate-complete / 인간 전문 검토·최종 정본 승격 대기`.
+판정: `candidate-complete`. 인간 전문 검토와 작가 승격 전에는 final canon이 아니다.
 
-## 3. 전체 사가
+## 4. 메인 사가 후보
 
+- 장기 성장 사가 후보: `docs/decisions/long-growth-main-saga-candidate-v0.1.md`
 - 7부제 기능 지도: `docs/decisions/seven-installment-saga-map-candidate-v0.1.md`
 - 장르·보상 지도: `docs/decisions/seven-installment-genre-reward-candidate-v0.1.md`
-- 인물 성장: `docs/decisions/seven-installment-character-arc-candidate-v0.1.md`
+- 인물 성장 지도: `docs/decisions/seven-installment-character-arc-candidate-v0.1.md`
 - 반복 루프: `docs/decisions/seven-installment-loop-candidate-v0.1.md`
-- 3~7 규모·차별화: `story/00-series/installments-03-07-differentiation-and-scale-matrix-v0.1.md`
-- 전체 회귀 감사: `reviews/series/seven-installment-full-blueprint-regression-v0.1.md`
-- 7부제 맥거핀·복선·결말 회수: `story/40-ledgers/foreshadowing-mystery-payoff-ledger-v0.2.md`
+- 3~7부 규모·차별화: `story/00-series/installments-03-07-differentiation-and-scale-matrix-v0.1.md`
+- 전체 설계 회귀 감사: `reviews/series/seven-installment-full-blueprint-regression-v0.1.md`
+- 장기 복선·미스터리 원장: `story/40-ledgers/foreshadowing-mystery-payoff-ledger-v0.2.md`
 
-상태: `author-approved structural baseline`.
+판정: `candidate structural baseline`. 7부제 자체와 세부 사건·인물·결말은 재검토 가능하다.
 
-## 4. 부제작별 원고 직전 상태
+## 5. 부제작별 설계 상태
 
-| 부제작 | 장르 | 장면 | 장 | 통합 패키지 | 상태 |
+| 부제작 | 장르 후보 | 장면 카드 | 장 후보 | 설계 패키지 | 상태 |
 |---:|---|---:|---:|---|---|
-| 1 | 도시 통학 미스터리 | 30 | 15 | `docs/00-project/installment1-chapter-outline-package-v0.1.md` | v0.3 review-copy / 독자 테스트 대기 |
-| 2 | 학교 스포츠·친구·소속 | 32 | 16 | `docs/00-project/installment2-pre-manuscript-package-v0.1.md` | pre-manuscript-ready |
-| 3 | 국내 수계 여행·탐사 | 30 | 15 | `docs/00-project/installment3-pre-manuscript-package-v0.1.md` | pre-manuscript-ready / 지역 감수 대기 |
-| 4 | 해외 재난·번역 스릴러 | 32 | 16 | `docs/00-project/installment4-pre-manuscript-package-v0.1.md` | pre-manuscript-ready / 언어·현지 감수 대기 |
-| 5 | 도시 추적·사회 미스터리 | 34 | 17 | `docs/00-project/installment5-pre-manuscript-package-v0.1.md` | pre-manuscript-ready / 법률·언론·교통 검토 대기 |
-| 6 | 시스템 구조·권력 선택 | 36 | 18 | `docs/00-project/installment6-pre-manuscript-package-v0.1.md` | pre-manuscript-ready / 기반시설·정책 검토 대기 |
-| 7 | 분산 최종 임무·졸업 | 40 | 20 | `docs/00-project/installment7-pre-manuscript-package-v0.1.md` | pre-manuscript-ready / 최종 인간 검토 대기 |
+| 1 | 도시 통학 미스터리 | 30 | 15 | `docs/00-project/installment1-chapter-outline-package-v0.1.md` | 설계 후보 |
+| 2 | 학교 스포츠·친구·소속 | 32 | 16 | `docs/00-project/installment2-pre-manuscript-package-v0.1.md` | 원고 직전 설계 후보 |
+| 3 | 국내 수계 여행·탐사 | 30 | 15 | `docs/00-project/installment3-pre-manuscript-package-v0.1.md` | 지역 감수 대기 |
+| 4 | 해외 재난·번역 | 32 | 16 | `docs/00-project/installment4-pre-manuscript-package-v0.1.md` | 언어·현지 감수 대기 |
+| 5 | 도시 추적·기록 공개 | 34 | 17 | `docs/00-project/installment5-pre-manuscript-package-v0.1.md` | 법률·개인정보 검토 대기 |
+| 6 | 시스템 구조·권력 선택 | 36 | 18 | `docs/00-project/installment6-pre-manuscript-package-v0.1.md` | 기반시설·정책 검토 대기 |
+| 7 | 분산 최종 임무·졸업 | 40 | 20 | `docs/00-project/installment7-pre-manuscript-package-v0.1.md` | 최종 구조 검토 대기 |
 
-합계: **117장·234장면 카드**.
+현재 합계인 117장·234장면 카드는 확정 분량이 아니라 비교·검증 가능한 설계 후보 수치다.
 
-## 5. 200화 연재
+## 6. 200화 구조
 
-- 연재 지도: `story/00-series/two-hundred-episode-serialization-map-v0.1.md`
-- 상세 번호표 생성기: `scripts/build_200_episode_map.py`
-- 첫 부제작 28화 브리프: `manuscript/installment-01/episode-briefs/episode-ledger-v0.1.md`
+- 후보 지도: `story/00-series/two-hundred-episode-serialization-map-v0.1.md`
+- 번호표 생성기: `scripts/build_200_episode_map.py`
 
-후보 배정:
+200화는 플랫폼 생산을 가정한 `candidate-production-map`이다. 사용자의 명시적 확정, 실제 원고 분량, 플랫폼 정책, 출판 단위 검토 전에는 목표 화수로 고정하지 않는다.
 
-- 1부제: 1~28화
-- 2부제: 29~56화
-- 3부제: 57~82화
-- 4부제: 83~110화
-- 5부제: 111~139화
-- 6부제: 140~169화
-- 7부제: 170~200화
+## 7. 설정집 검증 자산
 
-상태: `candidate-production-map / 실제 원고 분량·플랫폼·출판 검토 대기`.
+- 세계관 상세 갭 감사: `reviews/world-bible/full-detail-world-bible-gap-audit-v0.1.md`
+- 설정집 독창성·맹점 감사: `reviews/world-bible/world-bible-originality-blindspot-collection-red-team-v0.1.md`
+- 정본 중복·자리표시자 감사: `reviews/world-bible/source-of-truth-duplicate-placeholder-audit-v0.1.md`
+- 인간 전문가 검토표: `reviews/world-bible/human-expert-review-matrix-v0.1.md`
+- 설정집 최종 조건 테스트: `tests/world-bible/world-bible-final-completion-scenarios-v0.1.md`
+- 7부제 통합 회귀: `tests/seven-installment-integrated-regression-v0.1.md`
 
-## 6. 원고 완성 하네스
+원고를 읽거나 초고 완료를 전제로 한 역감사·독자 테스트는 정리 브랜치에서 제외한다.
 
-- 하네스 H0~H12: `docs/00-project/manuscript-completion-harness-v0.1.md`
-- 원고 모드 v0.2: `docs/00-project/manuscript-mode-operating-contract-v0.2.md`
-- 문체·액션·풍경·연재·카피 담당: N19·N20·N21·N22·P14
-- 한국 웹소설 기능 연구: `research/references/korean-webnovel-prose-serialization-patterns-v0.1.md`
-- 회차·장면 브리프: `templates/episode-scene-writing-brief.md`
-- 논리 시나리오: `tests/manuscript/manuscript-completion-harness-scenarios-v0.1.md`
-- v0.3 결정적 빌드: `scripts/build_installment1_v03.py`
-- 문장·문단 정량 감사: `scripts/audit_manuscript_style.py`
-- 첫 부제작 적용 감사: `reviews/manuscript/installment1-completion-harness-audit-v0.2.md`
+## 8. 아직 필요한 작업
 
-상태 구분:
+- 설정집 문서 간 중복·모순·낡은 링크 감사
+- 사용자 의도와 7부제·117장·200화 후보의 적합성 재검토
+- 해리포터에서 가져올 기능과 독자적 변형 거리 점검
+- 주인공·학교·대표 경기·수집 요소의 매력도 재검토
+- 실제 지역·문화·언어·생태·시설·법률 검토
+- 연표·나이·학사·이동거리·권한 구조 통합 감사
+- 최종 설정집 읽기 순서와 작가 검토 패키지 완성
 
-1. design-complete
-2. draft-complete
-3. internal-review-ready
-4. human-review-ready
-5. edited-manuscript
-6. publication-ready
+## 9. 현재 완료 판정
 
-첫 부제작은 `human-review-ready`이며 `edited-manuscript` 또는 `publication-ready`가 아니다.
+- 세계관·내부 설정집: 내부 설계 후보가 충분히 축적됨.
+- 7부제·117장·234장면: 상세 후보 설계가 존재함.
+- 200화: 선택 가능한 연재 변환 후보가 존재함.
+- 실제 소설 본문: 정리 브랜치에 존재하지 않으며 새로 작성하지 않음.
+- 최종 canon·출판 준비: 미완료.
 
-## 7. 내부적으로 완료된 것
+## 10. 다음 자동 진행 순서
 
-- 세계 존재 원리·힘·비용·실패·복구
-- 현대 기술·기관·기록·노출 경계
-- 학교 학적·생활·수업·통학·기숙·경기·안전
-- 생물·유물·영웅·회랑·수집 구조
-- 서하진 12→18세 성장
-- 7부제 2/3/2 대형막
-- 각 작품 구조 4안·3막·8시퀀스
-- 234장면 기능 카드
-- 공정 단서·합리적 오해·회수 구조
-- 활성 인물·등장 휴지 예산
-- 117장 장별 개요
-- 장기 미스터리 회계와 P-17 결말
-- 200화 연재 변환
-- 문체·액션·풍경·연재·복선·카피 하네스
-- PM·RACI·레드팀·편차 기록
+1. 끊어진 원고 링크와 잘못된 완료 상태 제거
+2. 세계관·사가·부제작 문서의 source-of-truth 재지정
+3. 7부제·117장·200화 후보 적합성 감사
+4. 설정집 누락·중복·모순 보수
+5. 작가가 한눈에 검토할 최종 설정집 패키지 작성
 
-## 8. 아직 완료되지 않은 것
-
-- 실제 10~15세·성인·보호자 독자 테스트 결과
-- 한국 교육행정·학교안전·의료·보험·개인정보 법률 검토
-- 금강하구 지역 복수 당사자·생태·시설 검토
-- 태국어·방콕 수계·현지 생활·기관·문화 검토
-- 기반시설·재난 대응·긴급 권한·감사 제도 검토
-- 실제 생물·유물·지도 삽화와 접근성 테스트
-- 제목·상표·출판·판형·분권·가격·플랫폼 분량 검토
-- 부제작 2~7 원고
-- 첫 부제작 발달·분야·라인·카피·교정쇄
-- 최종 canon·출판본
-
-## 9. 정확한 완료 판정
-
-- **세계관·내부 설정집:** 내부 설계용으로 완료.
-- **7부제 전체 설계도:** 원고 직전 수준으로 완료.
-- **200화 구조:** 기존 장면을 늘리지 않는 생산 후보로 완료.
-- **집필 하네스:** 구축 및 첫 부제작 시험 적용 완료.
-- **첫 부제작:** 인간 검토 가능한 리뷰본.
-- **부제작 2~7:** 원고 승인 전 단계까지 완료.
-- **편집·출판 완성본:** 인간 검토와 편집이 남아 미완료.
-
-## 10. 다음 차단선
-
-한 작품의 원고를 시작하려면 해당 작품의 명시적 원고 승인이 필요하다. 인간 검토 대기 항목은 승인 뒤에도 `working/provisional/human-review` 상태로 유지한다.
+원고 단계는 사용자가 작품과 범위를 특정하여 명시적으로 승인하기 전까지 잠금 상태다.
