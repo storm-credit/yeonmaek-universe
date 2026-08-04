@@ -6,7 +6,7 @@
 
 ## 활성 브랜치
 
-`canon/world-bible-provenance-clean`
+`main`
 
 ## 작업 범위
 
@@ -48,16 +48,20 @@
 - 주인공 핵심 욕망·약점·과거 상처·개인 비밀
 - 핵심 인물 9역의 생활 습관·독립 목표·개인 비밀
 - 각 인물의 5부 독립 선택과 관계 변화
-- 부모·교사·멘토·라이벌을 단순 무능·악역으로 만들지 않는 기준
+- 임시 정본 이름: 윤서후·김나린·박도겸·최이솔·한모아·강재원
+- 주인공 기본값: 중학교 1학년 남학생, 보호자 윤미정과 생활하는 소규모 가구 후보
 
 ### 이야기 설계도
 
+- 시리즈 임시 제목: **《겹길의 아이들》**
+- 5부 임시 제목 확정 후보
 - 5부 전체 줄거리
 - 각 부 3막·9시퀀스
-- 45개 기능 단위
-- 45개 상세 사건 카드
+- 45개 기능 단위와 45개 상세 사건 카드
 - 각 카드의 원인·현장·인물·단서·오판·선택·비용·파급
 - 장기 복선 10개의 표면 의미·오독·인물별 해석·재해석·회수·파급
+- 5부 × 18장 = **총 90장 장면 설계**
+- 각 장의 기능·갈등·선택·비용·정보 공개·장 끝 훅 설계
 
 ### 최종 감사
 
@@ -67,27 +71,36 @@
 - 기관 권한 분리 감사
 - 인물 독립성 감사
 - 5부 인과 감사
-- 45개 사건 카드 감사
-- 복선 회수 감사
+- 사건 카드와 복선 회수 감사
 - 기존 프로젝트 오염·표면 복제 감사
 
-## 최종 판정
+## 현재 판정
 
-> 세계관·설정집·5부 이야기 설계도는 원고 작성 전 사용할 수 있는 심층 설계 수준에 도달했다.
+> 세계관·설정집·5부 이야기 설계도와 총 90장 장면 기능표가 원고 작성 전 사용할 수 있는 심층 설계 수준에 도달했다.
 
-이 판정은 실제 원고가 완성되었다는 뜻이 아니며, 모든 고유명과 세부가 불변 정본이라는 뜻도 아니다.
+이 판정은 실제 소설 문장이나 대사가 작성됐다는 뜻이 아니다.
 
-## 작가 선택으로 남은 항목
+## 아직 잠긴 항목
 
-다음 항목은 논리 누락이 아니라 작가 취향·플랫폼 정책에 해당한다.
+- 실제 원고
+- 대사
+- 서술 문체
+- 시점
+- 장별 목표 원고 분량
+- 플랫폼별 회차 분할
 
-- 주인공·조연의 최종 고유명
-- 성별과 정확한 학년
-- 가족 구성의 최종 형태
-- 각 부 정식 제목
-- 지역·기관·생물·도구의 최종 명칭 수정
-- 실제 장 수·회차 수·플랫폼 분량
-- 시점·문체·서술 거리
+## 임시 정본 파일
+
+- `characters/00-core/provisional-canon-names-v0.1.md`
+- `story/00-series/five-part-provisional-titles-v0.1.md`
+
+## 90장 장면 설계 파일
+
+- `story/50-scene-plans/part1-eighteen-chapter-scene-plan-v0.1.md`
+- `story/50-scene-plans/part2-eighteen-chapter-scene-plan-v0.1.md`
+- `story/50-scene-plans/part3-eighteen-chapter-scene-plan-v0.1.md`
+- `story/50-scene-plans/part4-eighteen-chapter-scene-plan-v0.1.md`
+- `story/50-scene-plans/part5-eighteen-chapter-scene-plan-v0.1.md`
 
 ## 에이전트 실행 사실
 
@@ -101,19 +114,9 @@
 - 기존 인물명
 - 기존 원고·맥거핀·복선·결말
 
-## 핵심 심층 파일
-
-- `world/20-ecology/being-phenomenon-deep-catalog-v0.2.md`
-- `world/50-artifacts/artifact-tool-deep-catalog-v0.2.md`
-- `world/10-regions/five-region-twenty-five-site-network-v0.2.md`
-- `world/40-institutions/school-curriculum-calendar-facilities-v0.2.md`
-- `world/40-institutions/nine-institution-deep-cards-and-checks-v0.2.md`
-- `world/30-history/fifteen-event-causal-timeline-v0.2.md`
-- `characters/30-arcs/core-cast-five-part-independent-arcs-v0.2.md`
-- `story/35-event-cards/five-part-forty-five-detailed-event-cards-v0.2.md`
-- `story/40-ledgers/ten-foreshadowing-interpretation-payoff-ledger-v0.2.md`
-- `reviews/final/deep-integration-audit-v1.0.md`
-
 ## 다음 단계
 
-작가가 고유명·성별·학년·분량 정책을 정하면 장 편성표와 원고 작성 규칙을 별도 확정한다. 원고 작성은 별도 명시 전까지 잠금 상태다.
+1. 90장 전체의 등장인물·정보량·반복 장치 균형 감사
+2. 1부 18장의 씬 비트 세분화
+3. 시점·문체·원고 분량 정책 후보 작성
+4. 작가 승인 뒤 원고 잠금 해제
