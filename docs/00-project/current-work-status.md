@@ -54,14 +54,35 @@
 ### 이야기 설계도
 
 - 시리즈 임시 제목: **《겹길의 아이들》**
-- 5부 임시 제목 확정 후보
+- 5부 임시 제목
 - 5부 전체 줄거리
 - 각 부 3막·9시퀀스
 - 45개 기능 단위와 45개 상세 사건 카드
-- 각 카드의 원인·현장·인물·단서·오판·선택·비용·파급
-- 장기 복선 10개의 표면 의미·오독·인물별 해석·재해석·회수·파급
+- 장기 복선 10개 정밀 원장
 - 5부 × 18장 = **총 90장 장면 설계**
-- 각 장의 기능·갈등·선택·비용·정보 공개·장 끝 훅 설계
+- 90장 전체의 반복·등장인물·정보량 감사
+- 5부 전체 90장의 씬 비트 세분화
+
+### 90장 씬 비트
+
+각 장에 다음이 연결되어 있다.
+
+- 장면 진행 순서
+- 중심 인물과 보조 인물
+- 새로 공개되는 정보
+- 최초 오판
+- 선택과 비용
+- 감정 변화
+- 장 끝 훅
+- 다음 장·다음 부로 이어지는 인과
+
+파일:
+
+- `story/60-scene-beats/part1-eighteen-chapter-beats-v0.2.md`
+- `story/60-scene-beats/part2-eighteen-chapter-beats-v0.2.md`
+- `story/60-scene-beats/part3-eighteen-chapter-beats-v0.2.md`
+- `story/60-scene-beats/part4-eighteen-chapter-beats-v0.2.md`
+- `story/60-scene-beats/part5-eighteen-chapter-beats-v0.2.md`
 
 ### 최종 감사
 
@@ -72,11 +93,13 @@
 - 인물 독립성 감사
 - 5부 인과 감사
 - 사건 카드와 복선 회수 감사
+- 90장 반복·정보량·등장인물 분배 감사
+- 원고 준비도 감사
 - 기존 프로젝트 오염·표면 복제 감사
 
 ## 현재 판정
 
-> 세계관·설정집·5부 이야기 설계도와 총 90장 장면 기능표가 원고 작성 전 사용할 수 있는 심층 설계 수준에 도달했다.
+> 세계관·설정집·인물 관계·5부 전체 인과·90장 씬 비트는 원고 집필을 시작할 수 있는 수준이다.
 
 이 판정은 실제 소설 문장이나 대사가 작성됐다는 뜻이 아니다.
 
@@ -89,18 +112,18 @@
 - 장별 목표 원고 분량
 - 플랫폼별 회차 분할
 
-## 임시 정본 파일
+## 분량 정책 후보
 
-- `characters/00-core/provisional-canon-names-v0.1.md`
-- `story/00-series/five-part-provisional-titles-v0.1.md`
+- 단행본형: 5권 × 18장
+- 웹연재형: 약 180~240화
+- 중간형: 약 120~150화
 
-## 90장 장면 설계 파일
+현재 추천은 120~150화 중간형이지만 플랫폼 확정 전에는 정본화하지 않는다.
 
-- `story/50-scene-plans/part1-eighteen-chapter-scene-plan-v0.1.md`
-- `story/50-scene-plans/part2-eighteen-chapter-scene-plan-v0.1.md`
-- `story/50-scene-plans/part3-eighteen-chapter-scene-plan-v0.1.md`
-- `story/50-scene-plans/part4-eighteen-chapter-scene-plan-v0.1.md`
-- `story/50-scene-plans/part5-eighteen-chapter-scene-plan-v0.1.md`
+## 마지막 감사 파일
+
+- `reviews/final/ninety-chapter-balance-audit-v0.1.md`
+- `reviews/final/manuscript-readiness-after-ninety-beats-v1.0.md`
 
 ## 에이전트 실행 사실
 
@@ -116,7 +139,8 @@
 
 ## 다음 단계
 
-1. 90장 전체의 등장인물·정보량·반복 장치 균형 감사
-2. 1부 18장의 씬 비트 세분화
-3. 시점·문체·원고 분량 정책 후보 작성
-4. 작가 승인 뒤 원고 잠금 해제
+설계도 자동 작업은 완료했다. 이후 단계는 다음 중 하나다.
+
+1. 시점·문체·독자 연령·플랫폼 분량 확정
+2. 원고 잠금 해제 후 제1부 집필 시작
+3. 임시 고유명과 가족 구성의 작가 최종 승인
