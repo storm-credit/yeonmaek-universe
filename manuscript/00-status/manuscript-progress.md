@@ -2,14 +2,14 @@
 
 ## 현재 단계
 
-제1부 Act 2 집필 진행 중. 사전 점검 감사 통과(`reviews/design/part1-act2-pre-writing-inspection-v1.0.md`).
+제1부 Act 2 집필·통합 감사 완료. Act 3 집필 대기.
 
 ## 완료 현황
 
 - 전체: **11/90장 완료**
 - 제1부: **11/18장 완료**
 - 제1부 Act 1: **6/6장 완료·통합 감사 통과**
-- 제1부 Act 2: **5/5장 완료** (7~11장) — Subact 2.1·2.2·2.3 완료, 통합 감사 대기
+- 제1부 Act 2: **5/5장 완료·통합 감사 통과** (7~11장) — Subact 2.1·2.2·2.3 완료
 - 완료 원고는 모두 역할별 검수 문서를 보유한다.
 
 ## 완료 장
@@ -36,6 +36,26 @@
 - 통합 감사: `reviews/manuscript/part1-act1-integration-audit-v1.0.md`
 - 상태: 집필 완료·Act 단위 잠금
 
+### 제1부 Act 2 — 하나의 안전한 길
+
+- Subact 2.1 「사라진 안내판」: 7~8장 완료
+- Subact 2.2 「방향이 바뀌는 밤」: 9장 완료
+- Subact 2.3 「가장 빠른 길」: 10~11장 완료
+- 사전 점검: `reviews/design/part1-act2-pre-writing-inspection-v1.0.md`
+- 통합 감사: `reviews/manuscript/part1-act2-integration-audit-v1.0.md`
+- 상태: 집필 완료·Act 단위 잠금
+
+## Act 2 인과 결과
+
+- 두 번의 반납 실패로 "원위치에 돌려놓으면 끝난다"는 오판이 무너진다.
+- 조각은 장소가 아니라 아직 돌아가지 않은 사람을 가리키며, 귀환 완료 시 다음 대상으로 넘어간다.
+- 서후의 기록 강박이 수면·생활을 무너뜨리고, 이솔이 기록의 통제화를 경고한다.
+- 서후는 보호를 명분으로 재원의 선택권을 침해하고, 재원의 감수 이유(동생)가 드러난다.
+- 민규가 복개된 옛 물길의 어긋남 구간에 갇혔다가 구조된다(바깥 18시간, 체감 10분).
+- 구조 경로에서 표식이 뒤에서부터 소거된다 — 지나간 길이 재사용되지 않는다.
+- 옛 물길·이전된 표지·돌 받침대가 한 줄로 연결되고, 단일 안전 경로 계획이 추진된다.
+- 조각은 무방향 회전 상태로 전환된다.
+
 ## Act 1 인과 결과
 
 - 같은 골목이 사람마다 다른 출구와 시간을 보여 준다.
@@ -49,12 +69,11 @@
 
 ## 다음 작업
 
-1. 제1부 Act 2 시작
-2. 제7장 「사라진 안내판」 집필 및 검수
-3. 제8장 「반납되지 않은 조각」 집필 및 검수
-4. 제9장 「방향이 바뀌는 밤」 집필 및 검수
-5. 제10~11장 「가장 빠른 길」 집필 및 검수
-6. Act 2 전체 통합 감사
+1. 제1부 Act 3 사전 점검 감사 (CLAUDE.md 설계 자산 사전 점검 프로토콜)
+2. 제12~13장 (Subact 3.1 「하나의 귀환선」) 집필 및 검수
+3. 제14~16장 (Subact 3.2 「닫힐 권리」) 집필 및 검수
+4. 제17~18장 (Subact 3.3 「돌아온 뒤의 약속」) 집필 및 검수
+5. Act 3 통합 감사 및 제1부 부 단위 감사
 
 ## 집필 원칙
 
@@ -79,6 +98,11 @@
 - `manuscript/part1/chapter04-blank-school-form-v0.1.md`
 - `manuscript/part1/chapter05-name-arrived-first-v0.1.md`
 - `manuscript/part1/chapter06-family-nickname-v0.1.md`
+- `manuscript/part1/chapter07-missing-signpost-v0.1.md`
+- `manuscript/part1/chapter08-unreturned-piece-v0.1.md`
+- `manuscript/part1/chapter09-night-of-turning-directions-v0.1.md`
+- `manuscript/part1/chapter10-fastest-way-v0.1.md`
+- `manuscript/part1/chapter11-two-locations-v0.1.md`
 
 ## 사실 표기
 
