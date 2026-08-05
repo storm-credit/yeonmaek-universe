@@ -216,3 +216,7 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# Obsidian vault local files
+.obsidian/
+환영합니다!.md

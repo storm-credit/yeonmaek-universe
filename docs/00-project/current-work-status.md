@@ -71,11 +71,11 @@
 
 정식 파일:
 
-- `story/25-subacts/part1-fifteen-subacts-v1.0.md`
-- `story/25-subacts/part2-fifteen-subacts-v1.0.md`
-- `story/25-subacts/part3-fifteen-subacts-v1.0.md`
-- `story/25-subacts/part4-fifteen-subacts-v1.0.md`
-- `story/25-subacts/part5-fifteen-subacts-v1.0.md`
+- `story/25-subacts/part1-nine-subacts-v1.0.md`
+- `story/25-subacts/part2-nine-subacts-v1.0.md`
+- `story/25-subacts/part3-nine-subacts-v1.0.md`
+- `story/25-subacts/part4-nine-subacts-v1.0.md`
+- `story/25-subacts/part5-nine-subacts-v1.0.md`
 
 통합 감사:
 
@@ -120,11 +120,21 @@
 
 - 제1부 1장 「늦어진 귀가」
 - 제1부 2장 「지도에 없는 흙」
+- 제1부 3장 「세 번째 귀가자」
+- 제1부 4장 「학교의 빈 양식」
+- 제1부 5장 「이름이 먼저 도착한 곳」
+- 제1부 6장 「가족이 아는 약칭」
+- 제1부 Act 1 통합 감사 통과
 
 파일:
 
 - `manuscript/part1/chapter01-late-return-v0.1.md`
 - `manuscript/part1/chapter02-unmapped-soil-v0.1.md`
+- `manuscript/part1/chapter03-third-returner-v0.1.md`
+- `manuscript/part1/chapter04-blank-school-form-v0.1.md`
+- `manuscript/part1/chapter05-name-arrived-first-v0.1.md`
+- `manuscript/part1/chapter06-family-nickname-v0.1.md`
+- `reviews/manuscript/part1-act1-integration-audit-v1.0.md`
 
 전체 90장 원고는 아직 완성되지 않았다.
 
@@ -142,12 +152,12 @@
 - 45 Subact: 정식화 완료
 - 90장 설계·씬 비트: 완료
 - 집필법·문체·오케스트레이션 명세: 완료
-- 실제 원고: 2/90장 완료
+- 실제 원고: 6/90장 완료 (제1부 Act 1 완료·통합 감사 통과)
 
 ## 다음 자동 작업
 
-1. 제2장 역할별 검수 보강
-2. 제3장 「세 번째 귀가자」 집필
-3. 해당 Subact 1.2 종료 시 3~4장 묶음 감사
-4. 같은 방식으로 제1부 18장까지 진행
-5. 부 단위 감사 후 제2부로 진행
+1. 세계관·설정집·설계도 사전 점검 감사 실행
+2. 제1부 Act 2 시작: 제7장 「사라진 안내판」 집필 및 검수
+3. 제8장 「반납되지 않은 조각」, 제9장 「방향이 바뀌는 밤」, 제10~11장 「가장 빠른 길」 순차 진행
+4. Act 2 종료 시 통합 감사
+5. 같은 방식으로 제1부 18장까지 진행 후 부 단위 감사, 제2부로 진행
