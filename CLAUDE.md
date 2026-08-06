@@ -274,7 +274,15 @@
 - `writing/10-style/voice-and-prose-guide-v1.0.md`
 - `writing/20-dialogue/character-voice-matrix-v1.0.md`
 - `writing/30-workflow/chapter-drafting-and-revision-workflow-v1.0.md`
+- `writing/50-craft/macguffin-and-payoff-rules-v0.1.md`
+- `writing/60-recitation/read-aloud-line-criteria-v0.1.md`
 - `reviews/final/writing-style-originality-readiness-audit-v1.0.md`
+
+## 낭독 검사
+
+- 낭독 검사 스킬: `.claude/skills/nangdok/SKILL.md` (`/nangdok <장 번호|파일>`)
+- 판정 기준 정본: `writing/60-recitation/read-aloud-line-criteria-v0.1.md`
+- 장별 검수 완료 후 낭독 검사를 선택적으로 실행하고, 반영 시 검수 문서에 `낭독 검수` 절을 추가한다.
 
 ## 상태·출처 원칙
 
