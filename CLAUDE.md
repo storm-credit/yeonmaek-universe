@@ -273,8 +273,12 @@
 - `writing/00-system/writing-style-orchestration-v1.0.md`
 - `writing/10-style/voice-and-prose-guide-v1.0.md`
 - `writing/20-dialogue/character-voice-matrix-v1.0.md`
+- `writing/00-system/craft-coverage-map-v0.1.md` (기법 전수 지도 — 새 기법 문서는 반드시 여기 등록)
+- `writing/00-system/chapter-length-policy-v0.1.md`
 - `writing/30-workflow/chapter-drafting-and-revision-workflow-v1.0.md`
 - `writing/50-craft/macguffin-and-payoff-rules-v0.1.md`
+- `writing/50-craft/suspense-and-information-gap-design-v0.1.md`
+- `writing/50-craft/motif-symbol-transition-rules-v0.1.md`
 - `writing/60-recitation/read-aloud-line-criteria-v0.1.md`
 - `reviews/final/writing-style-originality-readiness-audit-v1.0.md`
 
