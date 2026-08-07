@@ -1,170 +1,90 @@
 # 현재 작업 상태
 
-## 저장소
+기준일: 2026-08-08
+저장소: `storm-credit/yeonmaek-universe`
+운영 브랜치: `main`
 
-`storm-credit/yeonmaek-universe`
+## 현재 단계
 
-## 활성 브랜치
+**정본 우선 계층형 스토리 오케스트라 마이그레이션 완료. 신규 원고 잠금 유지. 세계·설정·계층 S1 공백 보강 대기.**
 
-`main`
+## 실제 자산 확인
 
-## 프로젝트 자산
+- 세계관·설정집: `world/`에 핵심 규칙, 5권역·25거점, 생물·현상 36종, 유물·도구 30종, 학교·기관 9개, 역사 15사건 등의 문서가 존재
+- 인물: `characters/`에 주인공 후보 정본, 핵심 배역, 관계 매트릭스, 5부 독립 아크가 존재
+- 이야기: 5부·15 Act·45 Subact·90장 기능표와 5개 부 씬 비트가 존재
+- 원고: 제1부 1~11장 존재
+- 검수: 장별 1~11장 검수, Act 1·2 통합 감사 존재
+- `story/25-subacts/`: 다섯 파일의 파일명과 내부 부 번호·9 Subact 구조 일치, 이름 변경 없음
 
-- 세계관 정본
-- 설정집
-- 5부·15 Act·45 Subact·90장 이야기 설계도
-- 집필법·문체 시스템
-- 원고와 퇴고 기록
+## 정본 운영
 
-## 작가 승인 기준선
+- Constitution: `canon/CANON_CONSTITUTION.md`
+- Amendments: `canon/CANON_AMENDMENTS.md`
+- Decision Log: `canon/DECISION_LOG.md`
+- 공식 계층: `story/00-series/OFFICIAL_HIERARCHY_MAPPING.md`
+- 오케스트레이션: `orchestration/`
+- 상태 장부: `ledgers/`
 
-- 전체 구조: **5부 책임 성장형**
-- 성장 단계: **관찰 → 중지 → 보조 → 수행 → 조율**
-- 주인공 핵심: **돌아오는 길을 잘 만드는 아이**
-- 최종 성장: 모든 길을 혼자 관리하지 않고 권한·도구·교육을 분산하는 조율자
+## 공식 구조
 
-## 세계관·설정집 완료 범위
+`Series → Grand Act → Volume Act → Arc → Subact → Episode → Scene`
 
-- 현실과 숨은 경로의 중첩 원리
-- 접근권·소유권·관찰권·기록권·공개권 분리
-- 길·장소·생태·기록·도구 작동 규칙
-- 생물·현상 36종 심층 카드
-- 유물·도구 30종 심층 카드
-- 5권역·25거점과 이동 시간망
-- 학교 교과 12종, 학사 일정, 동아리 6종, 시설 10곳
-- 기관 9개 운영 카드와 상호 견제표
-- 역사 핵심 사건 15개와 인과 연표
-
-## 인물 완료 범위
-
-- 주인공 핵심 욕망·약점·과거 상처·개인 비밀
-- 핵심 인물 9역의 생활 습관·독립 목표·개인 비밀
-- 각 인물의 5부 독립 선택과 관계 변화
-- 임시 정본 이름: 윤서후·김나린·박도겸·최이솔·한모아·강재원
-- 주인공 기본값: 중학교 1학년 남학생, 보호자 윤미정과 생활하는 소규모 가구 후보
-
-## 공식 이야기 구조
-
-`시리즈 → 5부 → 15 Act → 45 Subact → 90장 → 장별 씬 비트 → 원고`
-
-- 각 부: 3 Act
-- 각 Act: 3 Subact
-- 각 Subact: 원칙적으로 2장
-- 총합: 5부 × 3 Act × 3 Subact × 2장 = 90장
-
-## Act·Subact 완료 범위
-
-45개 Subact 모두 다음을 갖는다.
-
-- 제목
-- 시작 상태
-- 주도 인물
-- 중심 갈등
-- 핵심 사건
-- 중간 반전
-- 선택 또는 결정
-- 비용
-- 관계 변화
-- 복선 투입·재등장·회수
-- 종료 전환
-- 대응 장
-
-정식 파일:
-
-- `story/25-subacts/part1-nine-subacts-v1.0.md`
-- `story/25-subacts/part2-nine-subacts-v1.0.md`
-- `story/25-subacts/part3-nine-subacts-v1.0.md`
-- `story/25-subacts/part4-nine-subacts-v1.0.md`
-- `story/25-subacts/part5-nine-subacts-v1.0.md`
-
-통합 감사:
-
-- `reviews/final/act-subact-ninety-chapter-integration-audit-v1.0.md`
-
-## 90장 설계 완료 범위
-
-- 5부 × 18장 = 총 90장
-- 각 장의 기능·갈등·선택·비용·정보 공개·장 끝 훅
-- 90장 반복·등장인물·정보량 감사
-- 90장 전체 씬 비트 세분화
-
-씬 비트 파일:
-
-- `story/60-scene-beats/part1-eighteen-chapter-beats-v0.2.md`
-- `story/60-scene-beats/part2-eighteen-chapter-beats-v0.2.md`
-- `story/60-scene-beats/part3-eighteen-chapter-beats-v0.2.md`
-- `story/60-scene-beats/part4-eighteen-chapter-beats-v0.2.md`
-- `story/60-scene-beats/part5-eighteen-chapter-beats-v0.2.md`
-
-## 집필법·문체 시스템
-
-- 윤서후 중심 3인칭 제한 시점
-- 과거형 중심
-- 생활감·경이·미스터리·관계 감정·위협의 조화
-- 인물별 음성 매트릭스
-- 장별 집필·검수·퇴고 워크플로우
-- 독창성·직접 모사 방지 규칙
-- Act·Subact 확인을 포함한 집필 오케스트레이션
-
-핵심 파일:
-
-- `CLAUDE.md`
-- `writing/00-system/writing-style-orchestration-v1.0.md`
-- `writing/10-style/voice-and-prose-guide-v1.0.md`
-- `writing/20-dialogue/character-voice-matrix-v1.0.md`
-- `writing/30-workflow/chapter-drafting-and-revision-workflow-v1.0.md`
+기존 대응:
+- 5부 → Grand Act
+- 15 Act → Volume Act
+- Volume Act별 기능성 Arc 15개
+- 45 Subact → Subact
+- 90장 → Episode
+- 장별 씬 비트 → Scene
 
 ## 원고 진행
 
-완료:
+- 전체: **11/90장 존재**
+- 제1부: **11/18장 존재**
+- Act 1: 1~6장, 통합 감사 통과·잠금
+- Act 2: 7~11장, 통합 감사 통과·잠금
+- Act 3: 설계 존재, 원고 없음
+- 기존 원고 삭제·신규 원고 생성: 없음
 
-- 제1부 1장 「늦어진 귀가」
-- 제1부 2장 「지도에 없는 흙」
-- 제1부 3장 「세 번째 귀가자」
-- 제1부 4장 「학교의 빈 양식」
-- 제1부 5장 「이름이 먼저 도착한 곳」
-- 제1부 6장 「가족이 아는 약칭」
-- 제1부 Act 1 통합 감사 통과
+## 현재 원고 잠금
 
-파일:
+**LOCKED**
 
-- `manuscript/part1/chapter01-late-return-v0.1.md`
-- `manuscript/part1/chapter02-unmapped-soil-v0.1.md`
-- `manuscript/part1/chapter03-third-returner-v0.1.md`
-- `manuscript/part1/chapter04-blank-school-form-v0.1.md`
-- `manuscript/part1/chapter05-name-arrived-first-v0.1.md`
-- `manuscript/part1/chapter06-family-nickname-v0.1.md`
-- `reviews/manuscript/part1-act1-integration-audit-v1.0.md`
+사용자가 다시 명시적으로 허가하기 전까지 신규 원고, 대사, 장면 본문을 작성하지 않는다. 잠금 해제에는 대상 CP와 S0=0, S1=0이 추가로 필요하다.
 
-전체 90장 원고는 아직 완성되지 않았다.
+## 새 완료 게이트 감사
 
-## 오케스트레이션 사실
+- S0: **0**
+- S1: **7**
+- 운영 구조 마이그레이션: 통과
+- 세계·설정·계층의 신규 집필 준비: 차단
+- 상세: `reviews/design/world-setting-completion-gap-audit-v1.0.md`
+- 장부: `ledgers/WORLD_GAP_LEDGER.md`
 
-실제 독립 프로세스 여러 개가 병렬 실행된 것은 아니다. 단일 총괄 모델이 구조·서브액트·인물·복선·문체·연속성·안전·독창성 전문 역할을 분리해 순차 검토하고 교차 검증한다.
+주요 차단:
+1. P1 후보 문서와 “완료” 상태 표기의 정본 지위 충돌
+2. 문화·종교 생활 기능 부재
+3. 경제·법·예산·절차 비용 부족
+4. 25거점 필수 장소 필드 불완전
+5. 핵심 인물 통합 카드·정보상한·오프스크린 행동 부족
+6. 아이템·생물 실제 인스턴스 상태 추적 부족
+7. 공식 계층 11필드 불균일
 
-이 사실을 실제 다중 에이전트 실행으로 과장하지 않는다.
+## 분량 정책
 
-## 현재 판정
-
-- 세계관: 집필 가능 심층 수준 완료
-- 설정집: 집필 가능 심층 수준 완료
-- 15 Act: 정식화 완료
-- 45 Subact: 정식화 완료
-- 90장 설계·씬 비트: 완료
-- 집필법·문체·오케스트레이션 명세: 완료
-- 실제 원고: 11/90장 완료 (제1부 Act 1·Act 2 완료·통합 감사 통과)
-
-## 작가 인터뷰 기록 (P0, 2026-08-06)
-
-- 주 독자: 중학생 전반. 위협은 실감 있게, 회복 장면 필수.
-- 본보기 작품 참조: 웹 검색 허용, 구조 교훈만 기록, 원문 인용 금지.
-- 사전 점검 감사 차단 0건이면 Act 집필 자동 진행.
-- 대안 시안 4개 비교는 Act 핵심 결정에만 적용.
+- 최소 기준만 둔다.
+- 상한 없음.
+- 현재 신규 Episode 최소: 공백 제외 2,500자.
+- 기존 1~11장은 소급 증보하지 않는다.
+- 현재는 신규 집필 자체가 잠겨 있다.
 
 ## 다음 자동 작업
 
-1. 제1부 Act 3 사전 점검 감사 실행 (CLAUDE.md 설계 자산 사전 점검 프로토콜)
-2. 제12~13장 (Subact 3.1 「하나의 귀환선」) 집필 및 검수
-3. 제14~16장 (Subact 3.2 「닫힐 권리」), 제17~18장 (Subact 3.3 「돌아온 뒤의 약속」) 순차 진행
-4. Act 3 통합 감사 및 제1부 부 단위 감사
-5. 제2부로 진행
+1. WG-S1-001: `world/`·`characters/` 원문별 정본 지위 재분류
+2. 제1부 후반에 필요한 장소·기관·아이템·인물 카드부터 템플릿 이관
+3. 문화·종교, 경제·법 절차 보강
+4. Series→Episode 11필드 역산 보강
+5. 아이템·복선·오프스크린·POV 장부 연결
+6. S0/S1 재감사
+7. 사용자의 명시적 허가가 있을 때만 원고 잠금 해제 검토
